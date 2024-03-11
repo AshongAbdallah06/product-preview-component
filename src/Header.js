@@ -3,13 +3,11 @@ import mobileHeaderImage from './images/image-product-mobile.jpg';
 import desktopHeaderImage from './images/image-product-desktop.jpg';
 
 const Header = () => {
-    const width = window.innerWidth;
-
     return (
         <picture>
-            <source srcset={desktopHeaderImage} />
-            <img className='header-img' src={mobileHeaderImage} alt="" />
-        </picture>    
+            <source srcset={desktopHeaderImage} media="(min-width: 650px)" />
+            <img className='header-img' src={mobileHeaderImage} alt="MDN" />
+        </picture>
     )
 }
 
