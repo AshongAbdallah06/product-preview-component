@@ -1,6 +1,7 @@
 import './App.css';
 import Main from './Main';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
     return (
@@ -9,10 +10,7 @@ function App() {
 
             <Main />
 
-            {/* <footer className="attribution" style={{textAlign: 'center', marginTop: '50px'}}>
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="https://www.frontendmentor.io/profile/AshongAbdallah06">Ashong Abdallah</a>.
-            </footer> */}
+            <Footer />
 
         </div>
     );

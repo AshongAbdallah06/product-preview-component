@@ -6,9 +6,10 @@ const Header = () => {
     const width = window.innerWidth;
 
     return (
-        <header>
-            <img className='header-img' src={width > 650 ? desktopHeaderImage : mobileHeaderImage} alt="" />
-        </header>    
+        <picture>
+            <source srcset={desktopHeaderImage} />
+            <img className='header-img' src={mobileHeaderImage} alt="" />
+        </picture>    
     )
 }
 
